@@ -1,3 +1,3 @@
 # Statistic_Basic
 
-## Counte
+## Computerized statistics
