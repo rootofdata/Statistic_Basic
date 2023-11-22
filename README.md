@@ -2,4 +2,4 @@
 
 ## Computerized statistics
 
-## statistics basic
+## Linear Regression
