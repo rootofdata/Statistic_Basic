@@ -1,4 +1,4 @@
-#½ÇÇè°èÈ¹ 2-2
+#ì‹¤í—˜ê³„íš 2-2
 a<-c(10.2,10.5,10.3,10.8,9.8,10.6,10.7,10.2,10,10.1)
 b<-c(9.8,9.6,10.1,10.2,10.1,9.7,9.5,9.6,9.8,9.9)
 plot(density(a),lty=1,ylim=c(0,1.5))
@@ -10,7 +10,7 @@ vb<-var(b)
 sp2<-(((length(a)-1)*va+(length(b)-1)*vb)/(length(a)+length(b)-2))
 sqrt(sp2)
 t<-(mean(a)-mean(b))/(sqrt(sp2)*(sqrt(1/length(a)+1/length(b))))
-boxplot(a,b,ylab="¾àÈ¿",names=c("a","b"),main="»ý»ê Á÷ÈÄ¿Í 1³â ÈÄÀÇ ¾àÈ¿È¿")
+boxplot(a,b,ylab="ì•½íš¨",names=c("a","b"),main="ìƒì‚° ì§í›„ì™€ 1ë…„ í›„ì˜ ì•½íš¨íš¨")
 t.test(a,b,var.equal = T)
 scores<-(c(a,b))
 groups<-c("a","b")
