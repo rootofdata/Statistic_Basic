@@ -1,9 +1,9 @@
-#¿¹Á¦ 3.2
-xi.bar<-tapply(wear,group,mean) #°¢°¢ x¹ÙÀÇ °ª
+#ì˜ˆì œ 3.2
+xi.bar<-tapply(wear,group,mean) #ê°ê° xë°”ì˜ ê°’
 summary(fit)
 str(summary(fit))
 
-cval<-qt(p= 0.05/2,df=12,lower.tail = F) #ÀÚÀ¯µµ 12
+cval<-qt(p= 0.05/2,df=12,lower.tail = F) #ìžìœ ë„ 12
 MSE<-summary(fit)[[1]]$'Mean Sq'[2];
 
 r<-4
@@ -17,7 +17,7 @@ fun<-function(x,cval,MSE,r) round(x+c(-1,1)*cval*sqrt(MSE/r),4)
 fun(xi.bar[2])
 lapply(xi.bar,fun,cval=cval,MSE=MSE,r=r)
 
-#¿¹Á¦3.3
+#ì˜ˆì œ3.3
 LSD<-round(cval*sqrt(2*MSE/r),4);LSD
 xi.bar
 fun2<-function(ind1,ind2,xi.bar,LSD)(abs(xi.bar[ind1]-xi.bar[ind2]))>LSD
@@ -28,13 +28,13 @@ fun2(2,3,xi.bar,LSD)
 fun2(2,4,xi.bar,LSD)
 fun2(3,4,xi.bar,LSD)
 
-TukeyHSD(fit) #ÅõÅ° ¹æ¹ý (diff¸¸º¼°Í)
+TukeyHSD(fit) #íˆ¬í‚¤ ë°©ë²• (diffë§Œë³¼ê²ƒ)
 ?TukeyHSD
 
 pairwise.t.test(wear,group,p.adj="none")
-pairwise.t.test(wear,group,p.adj="bonf")#º»Æä·Î´Ï
+pairwise.t.test(wear,group,p.adj="bonf")#ë³¸íŽ˜ë¡œë‹ˆ
 
-#¿¹Á¦ 3.4
+#ì˜ˆì œ 3.4
 a1<-c(62,60,63,59,61)
 a2<-c(63,67,71,64,65,66)
 a3<-c(68,K,66,71,67,68,68)
@@ -58,8 +58,8 @@ pairwise.t.test(y,x,p.adj="none")
 pairwise.t.test(y,x,p.adj="bonf")
 TukeyHSD(fit)
 
-bartlett.test(y~x)#µîºÐ»ê¼º °¡Á¤ °ËÁ¤
+bartlett.test(y~x)#ë“±ë¶„ì‚°ì„± ê°€ì • ê²€ì •
 
-plot(x=fit,which=1) #ÀÜÂ÷ºÐ¼®
+plot(x=fit,which=1) #ìž”ì°¨ë¶„ì„
 
-plot(fit,2) #Á¤±Ô¼º
+plot(fit,2) #ì •ê·œì„±
