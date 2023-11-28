@@ -1,4 +1,4 @@
-#5.1
+#4.1
 
 y<-c(98,99,98.6,97.6,97.7,98,98.2,97.3,96.5,97.9,96.9,96.7)
 
@@ -10,8 +10,8 @@ dat<-data.frame(y,a,b)
 str(dat)
 
 colors()
-boxplot(y~a,data=dat,col=colors()[c(10,20,30)],xlab="°¡¿­¿Âµµ",ylab="°­µµ",main="ÇÃ¶ó½ºÆ½ Á¦Ç°°­µµ")
-boxplot(y~b,data=dat,col=colors()[c(10,20,30,40)],xlab="°¡¿­¿Âµµ",ylab="°­µµ",main="ÇÃ¶ó½ºÆ½ Á¦Ç°°­µµ")
+boxplot(y~a,data=dat,col=colors()[c(10,20,30)],xlab="ê°€ì—´ì˜¨ë„",ylab="ê°•ë„",main="í”Œë¼ìŠ¤í‹± ì œí’ˆê°•ë„")
+boxplot(y~b,data=dat,col=colors()[c(10,20,30,40)],xlab="ê°€ì—´ì˜¨ë„",ylab="ê°•ë„",main="í”Œë¼ìŠ¤í‹± ì œí’ˆê°•ë„")
 
 fit<-aov(y~a+b,data=dat)
 anova(fit)
@@ -23,7 +23,7 @@ pairwise.t.test(y,a,p.adj="none")
 
 
 #5.2
-#Ç¥ 5-6
+#í‘œ 5-6
 y<-c(-1,-5,-6,-1,-1,-8,-1,5,2,11,-1,13,1,2,-4,1,6,1,-2,-3,-3,5,-5,4,6)
 row<-factor(rep(x=1:5,each=5));row
 col<-factor(rep(1:5,5));col
