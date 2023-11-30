@@ -3,3 +3,7 @@
 ## Computerized statistics
 
 ## Linear Regression
+
+## Design of Experiment
+
+## Computerized Statistics
