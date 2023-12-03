@@ -9,7 +9,8 @@ It involves employing computers to perform statistical data analysis, processing
 
 ## Design of Experiment
 **Design of Experiment** involves planning and conducting experiments effectively. 
-It focuses on controlling and manipulating experimental conditions to obtain desired results. This methodology is used to optimize experimental outcomes by carefully designing and controlling variables.
+It focuses on controlling and manipulating experimental conditions to obtain desired results. 
+This methodology is used to optimize experimental outcomes by carefully designing and controlling variables.
 
 ## Sampling Theory
 **Sampling Theory** deals with methods and principles of selecting a subset of individuals or items from a larger population. It encompasses techniques to extract representative samples from a population and utilize them to make inferences or estimates about the entire population.
